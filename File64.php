@@ -58,7 +58,7 @@ class File64 {
         if ($this->readDataApplication) { // en caso no tenga dataaplicacion del formato web, esto es en caso que mande la base64 en bruto
             list($header, $this->strBase64) = explode(",", $this->strBase64);
             $this->typeFile = explode(";", explode("/", $header)[1])[0];
-            $this->typeFile = $typeFile === "octet-stream" ? $this->octet_stream_change : $typeFile;
+            $this->typeFile = $this->typeFile === "octet-stream" ? $this->octet_stream_change : $this->typeFile;
         }
         if (count($this->acceptableFilesArray) > 0 && !in_array($this->typeFile, $this->acceptableFilesArray)) {
             throw new \Exception('Invalid file type');

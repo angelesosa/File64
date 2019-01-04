@@ -1,0 +1,102 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2019-01-04T05:07:49.901Z",
+	"__export_source": "insomnia.desktop.app:v6.3.2",
+	"resources": [
+		{
+			"_id": "wrk_d9d247f4d84d4b5fbc58e3ac37403ed7",
+			"created": 1545944695541,
+			"description": "",
+			"modified": 1546578228880,
+			"name": "Local Host - File64",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_09e0f743409246f980cb903b0055868e",
+			"color": null,
+			"created": 1545944695710,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1545944695710,
+			"modified": 1545944695710,
+			"name": "New Environment",
+			"parentId": "wrk_d9d247f4d84d4b5fbc58e3ac37403ed7",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_186e63aa9d1f421ab9a45c5b8efbc120",
+			"cookies": [],
+			"created": 1545944695715,
+			"modified": 1545944695715,
+			"name": "Default Jar",
+			"parentId": "wrk_d9d247f4d84d4b5fbc58e3ac37403ed7",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_3f1b33aca7a94c5cb71df6482936e3ce",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"pet\": \"onlyCodeBase64\",\n\t\"fileName\":\"fileNamePrueba\",\n\t\"fileType\":\"json\",\n\t\"base64\": \"eyJub21icmVQcm95ZWN0byI6IkNsYXNzIiwicGRmRmlsZU5hbWUiOiJGYWN0dXJhX2JsYW5jb19ncnVwb19hemFuZXJvLnBkZiIsIm1hcEl0ZW1zIjoiW1tcImFuZ2VsXCIse1wiY29udGVuZWRvclwiOlwiY29udGVuZWRvcl9pdGVtc1wiLFwidmFyaWFibGVOYW1lXCI6XCJhbmdlbFwiLFwieFwiOlwiMTkuNjQ1NFwiLFwieVwiOlwiMTAuODM4OFwiLFwiYW5jaG9cIjozOCxcImFsdG9cIjozLFwidGV4dF9hbGlnblwiOlwiTFwifV0sW1wic29zYVwiLHtcImNvbnRlbmVkb3JcIjpcImNvbnRlbmVkb3JfaXRlbXNcIixcInZhcmlhYmxlTmFtZVwiOlwic29zYVwiLFwieFwiOlwiNzQuODU1NlwiLFwieVwiOlwiMjMuMDMyNVwiLFwiYW5jaG9cIjozOCxcImFsdG9cIjozLFwidGV4dF9hbGlnblwiOlwiTFwifV1dIn0=\"\n}"
+			},
+			"created": 1545944705564,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_32ece9e240634735b2dc37e413b52109",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1545944705565,
+			"method": "POST",
+			"modified": 1546578368263,
+			"name": "onlyCodeBase64",
+			"parameters": [],
+			"parentId": "wrk_d9d247f4d84d4b5fbc58e3ac37403ed7",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost/File64/Api.php",
+			"_type": "request"
+		},
+		{
+			"_id": "req_248cf0f7e32745369126c469db664d3c",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"pet\": \"base64Web\",\n\t\"fileName\":\"fileNamePrueba2\",\n\t\"base64\": \"data:application/json;base64,eyJub21icmVQcm95ZWN0byI6IkJvbGV0YV9QREYiLCJwZGZGaWxlTmFtZSI6IkZhY3R1cmFfYmxhbmNvX2dydXBvX2F6YW5lcm8ucGRmIiwibWFwSXRlbXMiOiJbW1wiYW5nZWxcIix7XCJjb250ZW5lZG9yXCI6XCJjb250ZW5lZG9yX2l0ZW1zXCIsXCJ2YXJpYWJsZU5hbWVcIjpcImFuZ2VsXCIsXCJ4XCI6MCxcInlcIjowLFwiYW5jaG9cIjozOCxcImFsdG9cIjozLFwidGV4dF9hbGlnblwiOlwiTFwifV0sW1wic29zYVwiLHtcImNvbnRlbmVkb3JcIjpcImNvbnRlbmVkb3JfaXRlbXNcIixcInZhcmlhYmxlTmFtZVwiOlwic29zYVwiLFwieFwiOjAsXCJ5XCI6MCxcImFuY2hvXCI6MzgsXCJhbHRvXCI6MyxcInRleHRfYWxpZ25cIjpcIkxcIn1dXSJ9\"\n}"
+			},
+			"created": 1546577768794,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_32ece9e240634735b2dc37e413b52109",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1545079122780.5,
+			"method": "POST",
+			"modified": 1546578375225,
+			"name": "base64Web",
+			"parameters": [],
+			"parentId": "wrk_d9d247f4d84d4b5fbc58e3ac37403ed7",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost/File64/Api.php",
+			"_type": "request"
+		}
+	]
+}

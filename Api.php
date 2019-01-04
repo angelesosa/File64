@@ -34,11 +34,22 @@ class Api {
         $this->fecha = gmdate('Y-m-d H:i:s', time() - 18000);
     }
 
-    function prueba($json) {
-
+    function onlyCodeBase64($json) {
+        
         File64::create($json['base64'])
-                ->set_fileNameAndDir("prueba")
-                ->change_OctetStream_To("rar")
+                ->set_fileNameAndDir($json['fileName'])
+                ->setTypeFile($json['fileType'])
+                ->createFile();
+
+        Mensaje::okMessaje("Archivo creado");
+    }
+    
+    function base64Web($json) {
+        
+        File64::create($json['base64'])
+                ->set_fileNameAndDir($json['fileName'])
+                ->ReadDataApplicationAndSetTypeFile(true)
+                ->change_OctetStream_To("octet-stream")
                 ->createFile();
 
         Mensaje::okMessaje("Archivo creado");
